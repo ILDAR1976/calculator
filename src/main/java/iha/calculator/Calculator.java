@@ -86,7 +86,7 @@ public class Calculator {
 		if ((Integer.parseInt(tokens.get(0).name) < Integer.parseInt(tokens.get(1).name)) &&
 			(tokens.get(2).operation instanceof Substract) && this.romanianNumber )
 			throw
-			new Exception("т.к. результат операции отрацительный в романской системе исчисления");
+			new Exception("т.к. результат операции отрицательный в романской системе исчисления");
 		
 		return tokens;
 	}
