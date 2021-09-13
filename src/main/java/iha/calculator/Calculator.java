@@ -84,9 +84,9 @@ public class Calculator {
 				new Exception("т.к. в одном из операндов используются значения больше 10");
 		
 		if ((Integer.parseInt(tokens.get(0).name) < Integer.parseInt(tokens.get(1).name)) &&
-			(tokens.get(2).operation instanceof Substract))
+			(tokens.get(2).operation instanceof Substract) && this.romanianNumber )
 			throw
-			new Exception("т.к. результат операции отрацительный");
+			new Exception("т.к. результат операции отрацительный в романской системе исчисления");
 		
 		return tokens;
 	}
@@ -173,7 +173,6 @@ public class Calculator {
 		alphabet.add(new Symbol('V',false,true));
 		alphabet.add(new Symbol('X',false,true));
 	}
-	
 
 }
 
